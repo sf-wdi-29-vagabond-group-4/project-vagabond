@@ -16,4 +16,9 @@ Rails.application.routes.draw do
 
 >>>>>>> venues
 
+  get "/users/:id/edit", to: "users#edit"
+
+  patch "/users/:id", to: "users#update"
+
+
 end
