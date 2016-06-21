@@ -31,16 +31,12 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-<<<<<<< HEAD
+
      if current_user == nil
       redirect_to "/sign_in"
     else
       render :show
     end
-=======
-    render :show
-
->>>>>>> joins
   end
 
   def update
