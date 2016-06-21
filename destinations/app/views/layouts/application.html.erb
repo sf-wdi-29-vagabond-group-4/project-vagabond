@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <nav class="teal">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Destinations</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Login</a></li>
+        <li><a href="badges.html">Logout</a></li>
+        <li><a href="collapsible.html">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
   <title>Destinations</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <h1>Hello</h1>
+  <h1></h1>
 <%= yield %>
 
 </body>
