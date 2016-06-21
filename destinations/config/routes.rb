@@ -13,10 +13,11 @@ Rails.application.routes.draw do
 
   post "/sessions", to: "sessions#create"
 
+  delete "/sessions", to: "sessions#destroy"
+
   get "/users/:id/edit", to: "users#edit"
 
   patch "/users/:id", to: "users#update"
-
 
 
 end
