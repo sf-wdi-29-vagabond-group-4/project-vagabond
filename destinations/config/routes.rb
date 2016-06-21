@@ -8,13 +8,13 @@ Rails.application.routes.draw do
   get "/sign_in", to: "sessions#new"
   post "/sessions", to: "sessions#create"
 
-<<<<<<< HEAD
-  delete "/sessions", to: "sessions#destroy"
-=======
+
+  delete "/sessions", to: "sessions#destroy", as: "delete"
+
 
   resources :venues
 
->>>>>>> venues
+
 
   get "/users/:id/edit", to: "users#edit"
 
