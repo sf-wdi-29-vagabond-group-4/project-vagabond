@@ -1,7 +1,6 @@
-<div>Welcome, <%= @user.first_name %>, <%= @user.last_name %></div>
-  <div>Current city: <%= @user.current_city %></div>
-  <div>Join date: <%= @user.created_at %></div>
+<div>Welcome, <%= @user.first_name %> <%= @user.last_name %></div>
   <img src="<%= @user.profile_pic %>"></div>
-  <div> <%= current_user.email %></div>
+  <div>Current city: <%= @user.current_city %></div>
+  <div>Join date: <%= @join.localtime.strftime('%a %b %d, %Y %I:%M%p') %></div>
    
   
