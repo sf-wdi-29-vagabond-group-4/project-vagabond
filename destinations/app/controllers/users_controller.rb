@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
-  def index
+  
+  def home
+      render :home
+  end
 
+  def index
     @users = User.all
     render :index
   end
@@ -27,9 +31,11 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-
-    render :show
-
+     if current_user == nil
+      redirect_to "/sign_in"
+    else
+      render :show
+    end
   end
 
   def update
